@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="auth.js"></script>
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Логин" required>
+            <input type="password" id="loginPassword" placeholder="Пароль" required>
+            <button class="submit" type="submit">Войти</button>
+        </form>
+        <button class="menu-btn" onclick="window.location.href='game.html?guest=true'">Играть как гость</button>
+        <p>Нет аккаунта? <a href="register.html">Регистрация</a></p>
+        <div id="loginError"></div>
+    </div>
+</body>
+
+</html>

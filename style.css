@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #faf8ef;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #776e65;
+    margin-bottom: 32px;
+}
+
+.menu-btn {
+    margin: 12px 0;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    background: #8f7a66;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    background: #bbada0;
+}
+
+.menu-links {
+    margin-top: 20px;
+}
+
+.menu-links a {
+    color: #8f7a66;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+.menu-container,
+.auth-container,
+.game-container,
+.records-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0001;
+    padding: 32px 48px;
+    margin: 40px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 95%;
+    font-size: 16px;
+}
+
+#gameBoard.board {
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+    grid-template-rows: repeat(4, 64px);
+    gap: 6px;
+    margin: 24px 0;
+}
+
+.tile {
+    background: #eee4da;
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+    font-size: 2em;
+    color: #776e65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.score-board {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.score-item {
+    background: #ede0c8;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px #0001;
+    display: flex;
+    align-items: center;
+}
+
+.score-label {
+    color: #8f7a66;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+
+#gameMessage {
+    color: #d35400;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#recordsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#recordsTable th,
+#recordsTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#recordsTable th {
+    background: #f2b179;
+    color: #fff;
+}
+
+#recordsTable tr:nth-child(even) {
+    background: #f9f6f2;
+}
+
+.auth-container input {
+    width: 90%;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto 10px auto;
+}
+
+.submit {
+    background: #8f7a66;
+    margin: 5px 0;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #8f7a66;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sumbit:hover {
+    background: #bbada0;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto 20px auto;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+}
+
+.header-right {
+    font-size: 1.1em;
+    color: #4a4a4a;
+    font-weight: bold;
+    margin-left: 20px;
+    min-width: 110px;
+    text-align: right;
+    word-break: break-all;
+}

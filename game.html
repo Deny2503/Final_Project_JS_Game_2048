@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра 2048</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+    <div class="game-header">
+        <div class="header-left">
+            <button id="backMenuBtn" class="menu-btn">В меню</button>
+            <button id="logoutBtn" class="menu-btn" style="display:none;">Выйти</button>
+        </div>
+        <div class="header-right" id="userInfo"></div>
+    </div>
+    <div class="game-container">
+        <h2>2048</h2>
+        <div class="score-board">
+            <div class="score-item">
+                <span class="score-label">Счёт:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">Лучший:</span>
+                <span id="bestScore">0</span>
+            </div>
+        </div>
+        <div id="gameBoard" class="board"></div>
+        <button id="restartBtn" class="menu-btn">Заново</button>
+        <div id="gameMessage"></div>
+    </div>
+</body>
+
+</html>
